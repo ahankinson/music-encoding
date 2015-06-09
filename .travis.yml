@@ -7,8 +7,8 @@ before_script:
     - cd music-encoding
     - pwd
     - ls
-    - ./build -t ../Stylesheets all
+    - ./build.sh -t ../Stylesheets all
 
 script:
     - pwd
-    - ./build -t ../Stylesheets test
+    - ./build.sh -t ../Stylesheets test
