@@ -90,6 +90,7 @@ while getopts "h:t:" OPT; do
             usage;;
         t)
             PATH_TO_TEI_STYLESHEETS=$OPTARG
+            TEI_TO_RELAXNG_BIN="${PATH_TO_TEI_STYLESHEETS}/bin/teitorelaxng"
             SKIP=$(($SKIP + 2));;
     esac
 done
