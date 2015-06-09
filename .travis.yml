@@ -3,13 +3,14 @@ before_install:
     - git clone --depth=1 --branch $TEIC_STYLESHEET_VERSION https://github.com/TEIC/Stylesheets.git
 
 before_script:
+    - echo $TRAVIS_BUILD_DIR
     - pwd
     - ls Stylesheets
     - cd music-encoding
     - pwd
     - ls
-    - ./build.sh -t ../Stylesheets/ all
+    - ./build.sh -t /home/travis/build/ahankinson/Stylesheets/ all
 
 script:
     - pwd
-    - ./build.sh -t ../Stylesheets/ test
+    - ./build.sh -t /home/travis/build/ahankinson/Stylesheets/ test
