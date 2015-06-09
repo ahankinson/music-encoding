@@ -5,11 +5,12 @@ before_install:
 before_script:
     - pwd
     - ls
+    - ls ../Stylesheets/
     - cd music-encoding
     - pwd
     - ls
-    - ./build.sh -t ../../Stylesheets all
+    - ./build.sh -t ../Stylesheets/ all
 
 script:
     - pwd
-    - ./build.sh -t ../../Stylesheets test
+    - ./build.sh -t ../Stylesheets/ test
