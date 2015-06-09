@@ -1,7 +1,7 @@
 language: java
-install: ant
+sudo: required
 before_install:
-    - pwd
+    - sudo apt-get install ant
     - git clone --depth=1 --branch $TEIC_STYLESHEET_VERSION https://github.com/TEIC/Stylesheets.git
 
 before_script:
