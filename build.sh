@@ -17,6 +17,7 @@ DRIVER_FILE=${SOURCE_DIR}"/driver.xml"
 all()
 {
     if [ ! -f $TEI_TO_RELAXNG_BIN ]; then
+        echo $TEI_TO_RELAXNG_BIN
         echo "The TEI Stylesheets were not found at:" $PATH_TO_TEI_STYLESHEETS
         echo "Please specify using -t flag."
         exit 1
