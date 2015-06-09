@@ -36,6 +36,7 @@ all()
     for file in $(find ${CUSTOMIZATIONS_DIR} -name '*.xml');
     do
         echo "processing" "${file}"
+        echo $DRIVER_FILE
         $TEI_TO_RELAXNG_BIN --localsource=$DRIVER_FILE $file $BUILD_DIR/$(basename ${file%%.*}).rng
 
         if [ $? = 1 ]; then
