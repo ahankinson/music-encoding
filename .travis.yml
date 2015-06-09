@@ -4,8 +4,7 @@ before_install:
 
 before_script:
     - pwd
-    - ls
-    - ls ../Stylesheets/
+    - ls Stylesheets
     - cd music-encoding
     - pwd
     - ls
