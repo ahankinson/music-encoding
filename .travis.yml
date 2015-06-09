@@ -3,6 +3,8 @@ before_install:
     - git clone --depth=1 --branch $TEIC_STYLESHEET_VERSION https://github.com/TEIC/Stylesheets.git
 
 before_script:
+    - echo `pwd`
+    - echo `ls`
     - ./build -t ../Stylesheets all
 
 script:
